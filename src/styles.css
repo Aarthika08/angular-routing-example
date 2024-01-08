@@ -1,1 +1,151 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #962b2b;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #ffd700; /* Change color on hover */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    display: none;
+  }
+  
+  section:target {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      padding: 10px;
+    }
+  
+    .content {
+      max-width: 100%;
+    }
+  }
+  
+
+
+  /* Add the following styles to your existing CSS */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .fade {
+    animation: fade 2s ease-in-out infinite;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    max-width: 400px;
+    margin: 20px;
+  }
+  
+  .example-header-image {
+    background-image: url('assets/avatar.jpg');
+  }
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  /* Add the following animation styles to your existing CSS */
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+  /* home.component.css */
+
+ .mySlides {
+    display: none;
+  }
+  
+  .fade {
+    animation: fade 1s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
